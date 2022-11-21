@@ -1,6 +1,12 @@
 <script>
+import { store } from '../../store.js'
 export default {
       name: 'SpeakersSection',
+      data() {
+            return {
+                  store
+            }
+      }
 }
 </script>
 
@@ -20,53 +26,19 @@ export default {
                   </div>
                   <div class="speakers_slider">
 
-                        <div class="col">
-                              <div class="my-card">
-                                    <div class="image-card">
-                                          <img src="/images/speaker-1.jpg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                          <h4>name</h4>
-                                          <p>profession</p>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col">
-                              <div class="my-card">
-                                    <div class="image-card">
-                                          <img src="/images/speaker-2.jpg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                          <h4>name</h4>
-                                          <p>profession</p>
+                        <div class="row row-cols-4">
+                              <div class="col" v-for="speaker in store.speakers">
+                                    <div class="my-card">
+                                          <div class="image-card">
+                                                <img :src="speaker.img" alt="">
+                                          </div>
+                                          <div class="card-body">
+                                                <h4>{{ speaker.name }}</h4>
+                                                <p>{{ speaker.job }}</p>
+                                          </div>
                                     </div>
                               </div>
                         </div>
-                        <div class="col">
-                              <div class="my-card">
-                                    <div class="image-card">
-                                          <img src="/images/speaker-3.jpg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                          <h4>name</h4>
-                                          <p>profession</p>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col">
-                              <div class="my-card">
-                                    <div class="image-card">
-                                          <img src="/images/speaker-4.jpg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                          <h4>name</h4>
-                                          <p>profession</p>
-                                    </div>
-                              </div>
-                        </div>
-
-
-
                   </div>
             </div>
       </section>
