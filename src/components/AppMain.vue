@@ -3,13 +3,15 @@ import JumboSection from './layouts/JumboSection.vue'
 import InfoSection from './layouts/InfoSection.vue'
 import CountdownSection from './layouts/CountdownSection.vue'
 import SpeakersSection from './layouts/SpeakersSection.vue'
+import ProgramSection from './layouts/ProgramSection.vue'
 export default {
       name: 'AppMain',
       components: {
             JumboSection,
             InfoSection,
             CountdownSection,
-            SpeakersSection
+            SpeakersSection,
+            ProgramSection
       }
 }
 </script>
@@ -20,6 +22,7 @@ export default {
             <InfoSection />
             <CountdownSection />
             <SpeakersSection />
+            <ProgramSection />
 
       </main>
 </template>
