@@ -6,6 +6,7 @@ import SpeakersSection from './layouts/SpeakersSection.vue'
 import ProgramSection from './layouts/ProgramSection.vue'
 import MapsSection from './layouts/MapsSection.vue'
 import LocationSection from './layouts/LocationSection.vue'
+import NewsSection from './layouts/NewsSection.vue'
 export default {
       name: 'AppMain',
       components: {
@@ -15,7 +16,8 @@ export default {
             SpeakersSection,
             ProgramSection,
             MapsSection,
-            LocationSection
+            LocationSection,
+            NewsSection
       }
 }
 </script>
@@ -29,6 +31,7 @@ export default {
             <ProgramSection />
             <MapsSection />
             <LocationSection />
+            <NewsSection />
 
       </main>
 </template>
