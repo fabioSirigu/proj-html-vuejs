@@ -132,5 +132,14 @@ export const store = reactive({
                   link: 'https://t.co/BGaHs',
                   date: '11 days ago'
             }
+      ],
+      sponsors: [
+            { image: '/images/banner-1.jpg' },
+            { image: '/images/banner-2.jpg' },
+            { image: '/images/banner-3.jpg' },
+            { image: '/images/banner-4.jpg' },
+            { image: '/images/banner-5.jpg' },
+            { image: '/images/banner-6.jpg' }
       ]
+
 })
