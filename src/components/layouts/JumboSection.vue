@@ -98,6 +98,12 @@ section {
                   font-weight: 600;
                   border: none;
                   border-radius: 5px;
+                  transition: all 0.2s;
+
+                  &:hover {
+                        background-color: darkred;
+
+                  }
             }
       }
 

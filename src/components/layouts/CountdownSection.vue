@@ -104,6 +104,12 @@ export default {
                         text-transform: uppercase;
                         font-weight: 600;
                         font-size: 14px;
+                        transition: all 0.2s;
+
+                        &:hover {
+                              background-color: darkred;
+
+                        }
                   }
             }
       }

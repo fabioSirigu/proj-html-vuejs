@@ -31,6 +31,20 @@ export default {
                                     <div class="my-card">
                                           <div class="image-card">
                                                 <img :src="speaker.img" alt="">
+                                                <div class="over_social">
+                                                      <a href="">
+                                                            <font-awesome-icon icon="fa-brands fa-facebook-f"
+                                                                  class="icon" />
+                                                      </a>
+                                                      <a href="">
+                                                            <font-awesome-icon icon="fa-brands fa-twitter"
+                                                                  class="icon" />
+                                                      </a>
+                                                      <a href="">
+                                                            <font-awesome-icon icon="fa-brands fa-linkedin-in"
+                                                                  class="icon" />
+                                                      </a>
+                                                </div>
                                           </div>
                                           <div class="card-body">
                                                 <h4>{{ speaker.name }}</h4>
@@ -91,8 +105,47 @@ export default {
 
                         .my-card {
 
-                              img {
-                                    width: 100%;
+                              .image-card {
+                                    position: relative;
+
+                                    img {
+                                          border-radius: 1rem;
+                                          width: 100%;
+                                    }
+
+                                    &:hover .over_social {
+                                          display: flex;
+                                    }
+
+                                    .over_social {
+                                          width: 100%;
+                                          height: 100%;
+                                          background-color: $designImportant;
+                                          border-radius: 1rem;
+
+                                          filter: opacity(0.5);
+                                          display: none;
+                                          justify-content: center;
+                                          align-items: center;
+                                          position: absolute;
+                                          top: 0;
+
+
+
+                                          a {
+                                                text-align: center;
+                                                color: $primaryLight;
+                                                scale: 1.5;
+                                                padding: 0 1rem;
+
+                                                &:hover {
+                                                      scale: 2;
+                                                }
+
+
+                                          }
+
+                                    }
                               }
                         }
                   }

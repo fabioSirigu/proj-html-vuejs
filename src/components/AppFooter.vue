@@ -159,6 +159,10 @@ footer {
                   font-weight: 600;
                   border: none;
                   border-radius: 5px;
+
+                  &:hover {
+                        background-color: darkred;
+                  }
             }
 
             .gallery {
