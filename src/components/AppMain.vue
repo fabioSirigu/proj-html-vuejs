@@ -8,6 +8,7 @@ import MapsSection from './layouts/MapsSection.vue'
 import LocationSection from './layouts/LocationSection.vue'
 import NewsSection from './layouts/NewsSection.vue'
 import TicketsSection from './layouts/TicketsSection.vue'
+import PresentationSection from './layouts/PresentationSection.vue'
 export default {
       name: 'AppMain',
       components: {
@@ -19,7 +20,8 @@ export default {
             MapsSection,
             LocationSection,
             NewsSection,
-            TicketsSection
+            TicketsSection,
+            PresentationSection
       }
 }
 </script>
@@ -35,6 +37,7 @@ export default {
             <LocationSection />
             <NewsSection />
             <TicketsSection />
+            <PresentationSection />
 
       </main>
 </template>

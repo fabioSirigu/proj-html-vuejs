@@ -112,5 +112,25 @@ export const store = reactive({
 
 
             }
+      ],
+      twitterFeed: [
+            {
+                  logo: '/images/twitterLogo.png',
+                  feed: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquamcumque quas commodi nam nostrum, @Envato consectetur nesciunt quam Eius illum voluptas autem? Cupiditate maxime animi quisquam voluptate asperiores! Sapiente, maiores.',
+                  link: 'https://t.co/GsdBgsa',
+                  date: '3 days ago'
+            },
+            {
+                  logo: '/images/twitterLogo.png',
+                  feed: 'Lorem ipsum dolor sit amet consectetur adipisicing elit..Cupiditate maxime animi quisquam voluptate asperiores!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquamcumque quas commodi nam nostrum',
+                  link: 'https://t.co/BsdAxsa',
+                  date: '9 days ago'
+            },
+            {
+                  logo: '/images/twitterLogo.png',
+                  feed: 'Lorem ipsum dolor sit amet consectetur adipisicing elit..Cupiditate maxime animi quisquam voluptate asperiores! Lorem verded srumLorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquamcumque quas commodi nam nostrum',
+                  link: 'https://t.co/BGaHs',
+                  date: '11 days ago'
+            }
       ]
 })
