@@ -21,7 +21,8 @@ export default {
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                           <li class="nav-item" v-for="link in store.navbar">
-                                                <a class="nav-link" href="#">{{ link }}</a>
+                                                <a href="#" :class="link === 'Home' ? 'active nav-link' : 'nav-link'">
+                                                      {{ link }}</a>
                                           </li>
 
 
@@ -66,8 +67,15 @@ header {
                   flex-grow: 0;
             }
 
+            .active {
+                  border-bottom: 2px solid red;
+                  color: $primaryDanger;
+
+            }
+
             .nav-item:hover {
                   border-bottom: 2px solid red;
+
 
                   a {
                         color: $primaryDanger;

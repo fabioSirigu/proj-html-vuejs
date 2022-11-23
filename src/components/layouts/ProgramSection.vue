@@ -44,7 +44,7 @@ export default {
                               </div>
                               <div>
                                     <font-awesome-icon icon="fa-solid fa-user" />
-                                    <h5>Laura</h5>
+                                    <h5></h5>
                               </div>
                         </div>
                         <div class="col-10 card_event">
@@ -102,10 +102,12 @@ export default {
                   border: 1px solid red;
                   text-align: center;
                   padding: 1rem 0;
+                  background-color: $primaryDanger;
             }
 
             .data_info {
                   padding: 2rem;
+                  background-color: $primaryLightning;
 
                   .details_event {
                         display: flex;

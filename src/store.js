@@ -1,26 +1,26 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-      navbar: {
-            link1: 'Home',
-            link2: 'Pages',
-            link3: 'Program',
-            link4: 'Tickets',
-            link5: 'Speakers',
-            link6: 'Papares',
-            link7: 'Blog',
-            link8: 'Shortcodes'
-      },
+      navbar: [
+            'Home',
+            'Pages',
+            'Program',
+            'Tickets',
+            'Speakers',
+            'Papares',
+            'Blog',
+            'Shortcodes'
+      ],
       speakers: [
             {
                   img: '/images/speaker-1.jpg',
                   name: 'Franco Rossi',
-                  job: 'weDev',
+                  job: 'webDev',
             },
             {
                   img: '/images/speaker-2.jpg',
-                  name: 'Franco Rossi',
-                  job: 'weDev',
+                  name: 'Lucas King',
+                  job: 'Software CEO',
             },
             {
                   img: '/images/speaker-3.jpg',
@@ -49,7 +49,7 @@ export const store = reactive({
             },
             {
                   img: '/images/speaker-8.jpg',
-                  name: 'Franco Rossi',
+                  name: 'Laurance Francis',
                   job: 'weDev',
             },
       ],

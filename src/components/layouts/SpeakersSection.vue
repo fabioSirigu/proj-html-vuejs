@@ -82,15 +82,22 @@ export default {
             justify-content: space-between;
             gap: 2rem;
 
-            .col {
+            .row {
 
-                  .my-card {
+                  flex-wrap: nowrap;
+                  overflow-x: auto;
 
-                        img {
-                              width: 100%;
+                  .col {
+
+                        .my-card {
+
+                              img {
+                                    width: 100%;
+                              }
                         }
                   }
             }
+
       }
 }
 </style>
