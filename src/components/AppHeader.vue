@@ -1,10 +1,10 @@
 <script>
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { store } from '../store.js';
 export default {
       name: 'AppHeader',
       data() {
             return {
-                  faMagnifyingGlass
+                  store
             }
       }
 }
@@ -20,30 +20,10 @@ export default {
                               </a>
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                          <li class="nav-item">
-                                                <a class="nav-link active" href="#">Home</a>
+                                          <li class="nav-item" v-for="link in store.navbar">
+                                                <a class="nav-link" href="#">{{ link }}</a>
                                           </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Pages</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Program</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Tickets</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Speakers</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Papares</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Blog</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Shortcodes</a>
-                                          </li>
+
 
                                     </ul>
                                     <form class="d-flex" role="search">
@@ -62,6 +42,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/partials/variables.scss' as *;
+
 header {
       width: 100%;
       height: 120px;
@@ -83,11 +65,22 @@ header {
             .navbar-collapse {
                   flex-grow: 0;
             }
+
+            .nav-item:hover {
+                  border-bottom: 2px solid red;
+
+                  a {
+                        color: $primaryDanger;
+
+                  }
+            }
       }
 
       .form-control {
             width: 5px;
+            margin: 0 1rem;
 
+            &:focus,
             &:hover {
                   width: 150px;
             }

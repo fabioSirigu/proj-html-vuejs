@@ -1,6 +1,16 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
+      navbar: {
+            link1: 'Home',
+            link2: 'Pages',
+            link3: 'Program',
+            link4: 'Tickets',
+            link5: 'Speakers',
+            link6: 'Papares',
+            link7: 'Blog',
+            link8: 'Shortcodes'
+      },
       speakers: [
             {
                   img: '/images/speaker-1.jpg',
@@ -140,6 +150,22 @@ export const store = reactive({
             { image: '/images/banner-4.jpg' },
             { image: '/images/banner-5.jpg' },
             { image: '/images/banner-6.jpg' }
+      ],
+      gallery: [
+
+            { thumb: '/images/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o (1).jpg' },
+            { thumb: '/images/photodune-8523683-speaker-at-business-convention-and-present.jpg' },
+            { thumb: '/images/photodune-6745579-modern-creative-man-relaxing-on-workspace-.jpg' },
+            { thumb: '/images/photodune-8522811-speaker-at-business-conference-and-present (1).jpg' },
+            { thumb: '/images/photodune-8797753-multiethnic-people-with-startup-business-t (1).jpg' },
+            { thumb: '/images/card04-150x150.jpg' },
+            { thumb: '/images/photodune-6745606-man-wristwatch-calendar-key-and-glasses-on.jpg' },
+            { thumb: '/images/photodune-6745585-modern-creative-workspace-m-150x150.jpg' },
+            { thumb: '/images/6426608875_186070f8ca_o-150x150.jpg' },
+            { thumb: '/images/card01-150x150.jpg' },
+            { thumb: '/images/13349065283_64d09b067c_o-150x150.jpg' },
+            { thumb: '/images/photodune-8795110-overhead-of-essentials-denim-clothes-m-150.jpg' }
+
       ]
 
 })
