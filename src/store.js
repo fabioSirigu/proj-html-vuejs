@@ -65,5 +65,52 @@ export const store = reactive({
                   comments: '0',
                   description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio officiis illo nobis eveniet quisquam beatae. Aperiam commodi consequatur'
             }
+      ],
+      tickets: [
+            {
+                  name: 'one day pass',
+                  type: 'free',
+                  description: {
+                        offer1: 'one day access',
+                        offer2: 'coffee break',
+                        offer3: 'lunch(international buffet)',
+                        offer4: 'documents sheets',
+                        offer5: '50usd voucher for next event'
+
+                  },
+                  link: 'book now'
+
+
+            },
+            {
+                  name: 'four day passes',
+                  type: '750.00 usd',
+                  description: {
+                        offer1: 'four day access',
+                        offer2: 'coffee break',
+                        offer3: 'lunch(international buffet)',
+                        offer4: 'documents sheets',
+                        offer5: '100usd voucher for next event'
+
+                  },
+                  link: 'book now'
+
+
+            },
+            {
+                  name: 'two day passes',
+                  type: 'free',
+                  description: {
+                        offer1: 'two day access',
+                        offer2: 'coffee break',
+                        offer3: 'lunch(international buffet)',
+                        offer4: 'documents sheets',
+                        offer5: '70usd voucher for next event'
+
+                  },
+                  link: 'book now'
+
+
+            }
       ]
 })

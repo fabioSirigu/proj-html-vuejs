@@ -53,7 +53,6 @@ export default {
             h3 {
                   text-transform: uppercase;
                   font-weight: 800;
-                  font-size: 50px;
             }
 
             h5 {
